@@ -1,0 +1,205 @@
+name: pathlexi
+description: A Flutter project. Creates an iOS and Android app that describes anatomical pathology terms.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.7+4131
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.0.10
+  mailer: ^5.0.2
+  scoped_model: ^2.0.0-nullsafety.0
+  flutter_tts: ^3.2.2
+  in_app_review: ^2.0.4
+  advanced_in_app_review: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.9.2
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/pathlexi-logo.png
+    - assets/images/2.0x/pathlexi-logo.png
+    - assets/images/3.0x/pathlexi-logo.png
+    - assets/images/plc-logo.png
+    - assets/images/2.0x/plc-logo.png
+    - assets/images/3.0x/plc-logo.png
+    - assets/images/annular1.jpg
+    - assets/images/annular2.jpg
+    - assets/images/anthrocotic.jpg
+    - assets/images/artefactual.jpg
+    - assets/images/atrophic.jpg
+    - assets/images/berry-aneurysm.jpg
+    - assets/images/bosselated1.jpg
+    - assets/images/bosselated2.jpg
+    - assets/images/botryoid.jpg
+    - assets/images/bread1.jpg
+    - assets/images/bread2.jpg
+    - assets/images/caseous.jpg
+    - assets/images/cavitation.jpg
+    - assets/images/chocolate.jpg
+    - assets/images/circumferential1.jpg
+    - assets/images/circumferential2.jpg
+    - assets/images/circumscribed.jpg
+    - assets/images/confluent1.jpg
+    - assets/images/confluent2.jpg
+    - assets/images/congested.jpg
+    - assets/images/constricted.jpg
+    - assets/images/cystic.jpg
+    - assets/images/diffuse.jpg
+    - assets/images/ectatic.jpg
+    - assets/images/encapsulated.jpg
+    - assets/images/exophytic.jpg
+    - assets/images/fibrinous1.jpg
+    - assets/images/fibrinous2.jpg
+    - assets/images/fibrous1.jpg
+    - assets/images/fibrous2.jpg
+    - assets/images/fish-flesh.jpg
+    - assets/images/friable.jpg
+    - assets/images/fungating.jpg
+    - assets/images/fusiform.jpg
+    - assets/images/gangrenous.jpg
+    - assets/images/gelatinous.jpg
+    - assets/images/geographic.jpg
+    - assets/images/globular.jpg
+    - assets/images/granular.jpg
+    - assets/images/granular2.jpg
+    - assets/images/haemorrhagic1.jpg
+    - assets/images/haemorrhagic2.jpg
+    - assets/images/herniated.jpg
+    - assets/images/heterogeneous.jpg
+    - assets/images/homogeneous1.jpg
+    - assets/images/honeycomb-lung.jpg
+    - assets/images/hyperplastic.jpg
+    - assets/images/hypertrophic.jpg
+    - assets/images/indurated.jpg
+    - assets/images/inspissated.jpg
+    - assets/images/lobular1.jpg
+    - assets/images/lobular2.jpg
+    - assets/images/locular1.jpg
+    - assets/images/locular2.jpg
+    - assets/images/macronodular.jpg
+    - assets/images/melon-seed.jpg
+    - assets/images/micronodular.jpg
+    - assets/images/miliary1.jpg
+    - assets/images/miliary2.jpg
+    - assets/images/mixoid1.jpg
+    - assets/images/mixoid2.jpg
+    - assets/images/mucoid1.jpg
+    - assets/images/mucoid2.jpg
+    - assets/images/mulberry.jpg
+    - assets/images/multinodular.jpg
+    - assets/images/necrotic.jpg
+    - assets/images/nutmeg.jpg
+    - assets/images/papilliferous1.jpg
+    - assets/images/papilliferous2.jpg
+    - assets/images/peau-d-orange.jpg
+    - assets/images/pedunculated.jpg
+    - assets/images/petechial.jpg
+    - assets/images/polypoid1.jpg
+    - assets/images/polypoid2.jpg
+    - assets/images/potato.jpg
+    - assets/images/prolapsed1.jpg
+    - assets/images/prolapsed2.jpg
+    - assets/images/saccular.jpg
+    - assets/images/sago-spleen.jpg
+    - assets/images/scirrhous1.jpg
+    - assets/images/scirrhous2.jpg
+    - assets/images/sclerotic1.jpg
+    - assets/images/sclerotic2.jpg
+    - assets/images/serpiginous.jpg
+    - assets/images/sessile1.jpg
+    - assets/images/sessile2.jpg
+    - assets/images/slough.jpg
+    - assets/images/stenotic.jpg
+    - assets/images/strawberry.jpg
+    - assets/images/sugar-icing-spleen.jpg
+    - assets/images/thrombosed1.jpg
+    - assets/images/thrombosed2.jpg
+    - assets/images/tortuous1.jpg
+    - assets/images/tortuous2.jpg
+    - assets/images/trabeculated.jpg
+    - assets/images/ulcerating1.jpg
+    - assets/images/ulcerating2.jpg
+    - assets/images/umbilicated.jpg
+    - assets/images/variegated.jpg
+    - assets/images/verrucous.jpg
+    - assets/images/whorled.jpg
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/NotoSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/NotoSans-Italic.ttf
+          style: italic
+          weight: 400
+    - family: OpenSansCondensed
+      fonts:
+        - asset: assets/fonts/OpenSansCondensed-Light.ttf
+          weight: 300
+        - asset: assets/fonts/OpenSansCondensed-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSansCondensed-LightItalic.ttf
+          weight: 300
+          style: italic
+       
+flutter_icons:
+  ios: true
+  android: true
+  image_path_ios: "assets/icon/pathlexi-ios-icon.png"
+  image_path_android: "assets/icon/pathlexi-android-icon.png"
+  adaptive_icon_background: "assets/icon/pathlexi-android-adaptive-icon-background.png"
+  adaptive_icon_foreground: "assets/icon/pathlexi-android-adaptive-icon-foreground.png"
